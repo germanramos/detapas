@@ -6,14 +6,39 @@
     <style type="text/css">
         @media screen and (min-width : 600px) {
             table {    
-                width: 50% !important;
+                width: 49% !important;
             }
+            .tostas {
+                margin-right: 2%;
+            }
+        }
+        
+        .oferta {
+            margin-top: 0.8em;
+            border: 1px solid black;
+            border-spacing: 0;
+        }
+
+        .oferta td {
+            padding: 0 0 0.3em 0;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .oferta h2{
+            padding-bottom: 0.1em;
+            margin: 0 0 0.2em 0
         }
 
         table {
-            width: 100%;
+            width: 99%;
             float: left;
             max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-block-end: 0;
         }
 
         h2 {
@@ -28,6 +53,7 @@
             /* text-align: center; */
             margin-block-start: 0.2em;
             margin-block-end: 0.2em;
+            font-style: italic;
         }
 
         .new {
@@ -42,10 +68,6 @@
         tr td:nth-of-type(2) { /* Precio */
             text-align: right;
         }
-        
-        .oferta {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -53,7 +75,7 @@
     <tr><td><h1>DE TAPAS</h1></td><td style="white-space: nowrap;">C/ Quero, 87<br>28024 Madrid<br>Móvil:
         660306111</td></tr>
 </table>
-<table>
+<table class="tostas">
     <tr><td colspan=2><h2>TOSTAS</h3></td></tr>
     <tr><td colspan=2><h3>Con Brie</h3></td></tr>
     <tr><td>Tosta de Brie con Lomo (Plancha)<span class="new">New</span></td><td>7.50€</td></tr>
@@ -91,22 +113,26 @@
     <tr><td>Tosta de Paté</td><td>6.00€</td></tr>
 </table>
 
-<table>
-    <tr><td colspan=2><h2>OFERTA ESPECIAL Nº1</h3></td></tr>
-    <tr><td colspan=2 class=oferta>Fuente de Huevos Rotos con Jamón</td></tr>
-    <tr><td colspan=2 class=oferta>Ensalada de Pimientos del Piquillo</td></tr>
-    <tr><td colspan=2 class=oferta>19.00€</td></tr>
-
+<table class="oferta">
+    <tr><td colspan=2><h2>OFERTA ESPECIAL Nº1</h2></td></tr>
+    <tr><td colspan=2>Fuente de Huevos Rotos con Jamón</td></tr>
+    <tr><td colspan=2>Ensalada de Pimientos del Piquillo</td></tr>
+    <tr><td colspan=2>19.00€</td></tr>
+</table>
+<table class="oferta">
     <tr><td colspan=2><h2>OFERTA ESPECIAL Nº2</h3></td></tr>
-    <tr><td colspan=2 class=oferta>Ración de Twister de Langostinos</td></tr>
-    <tr><td colspan=2 class=oferta>Ensalada de Pimientos del Piquillo</td></tr>
-    <tr><td colspan=2 class=oferta>13.50€</td></tr>
-
+    <tr><td colspan=2>Ración de Twister de Langostinos</td></tr>
+    <tr><td colspan=2>Ensalada de Pimientos del Piquillo</td></tr>
+    <tr><td colspan=2>13.50€</td></tr>
+</table>
+<table class="oferta">
     <tr><td colspan=2><h2>OFERTA ESPECIAL Nº3</h3></td></tr>
-    <tr><td colspan=2 class=oferta>Ración de Lacón a la Gallega</td></tr>
-    <tr><td colspan=2 class=oferta>Ensalada de Pimientos del Piquillo</td></tr>
-    <tr><td colspan=2 class=oferta>12.00€</td></tr>
+    <tr><td colspan=2>Ración de Lacón a la Gallega</td></tr>
+    <tr><td colspan=2>Ensalada de Pimientos del Piquillo</td></tr>
+    <tr><td colspan=2>12.00€</td></tr>
+</table>
 
+<table>
     <tr><td colspan=2><h2>RACIONES</h3></td></tr>
     <tr><td>Fuente de Huevos Rotos con Jamón</td><td>14.00€</td></tr>
     <tr><td>Twister de Langostinos</td><td>10.00€</td></tr>
